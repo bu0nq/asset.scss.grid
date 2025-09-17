@@ -1,0 +1,31 @@
+$amount-of-columns: 12 !default;
+
+.grid {
+  display: grid;
+
+  &[data-grid-template-columns] {
+    grid-auto-flow: column;
+  }
+
+  @for $i from 1 through $amount-of-columns {
+    &[data-grid-template-columns='#{$i}'] {
+      grid-template-columns: repeat(#{$i}, 1fr);
+    }
+  }
+
+  &-column {
+    display: grid;
+
+    @for $i from 1 through $amount-of-columns {
+      &[data-grid-column-start='#{$i}'] {
+        grid-column-start: #{$i};
+      }
+    }
+
+    @for $i from 1 through $amount-of-columns {
+      &[data-grid-column-end='#{$i}'] {
+        grid-column-end: #{$i + 1};
+      }
+    }
+  }
+}

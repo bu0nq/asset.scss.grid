@@ -1,0 +1,30 @@
+{
+  "name": "@bu0nq/asset.scss.grid",
+  "version": "0.1.0",
+  "description": "Package for integrating Asset.SCSS.Grid",
+  "main": "grid.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bu0nq/asset.scss.grid.git"
+  },
+  "keywords": [
+    "asset",
+    "scss",
+    "grid"
+  ],
+  "author": {
+    "name": "bu0nq",
+    "email": "hello@bu0nq.ru"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bu0nq/asset.scss.grid/issues"
+  },
+  "homepage": "https://github.com/bu0nq/asset.scss.grid#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
